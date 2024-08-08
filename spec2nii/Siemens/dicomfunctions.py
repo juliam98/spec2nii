@@ -631,10 +631,14 @@ def extractDicomMetadata_vx(dcmdata):
         obj.set_standard_def('InversionTime', float(dcmdata.csa_header['tags']['InversionTime']['items'][0]))
     # 'MixingTime'
     # 'ExcitationFlipAngle'
-    obj.set_standard_def('ExcitationFlipAngle', float(dcmdata.csa_header['tags']['FlipAngle']['items'][0]))
+    obj.set_standard_def('ExcitationFlipAngle', float(dcmdata.csa_header['tags']['VoiPosition']['items']))
     # 'TxOffset'
     # 'VOI'
+    obj.set_standard_def('VoiPosition', dcmdata.get('VoiPosition')['value'])
+    obj.set_standard_def('VoiOrientation', dcmdata.get('VoiOrientation')['value'])
     # 'WaterSuppressed'
+    obj.set_standard_def('WaterReferencedImageUid', str(dcmdata.get('WaterReferencedImageUid')['value'][0]))
+    obj.set_standard_def('WaterReferencedPhaseCorrection', bool(dcmdata.get('WaterReferencedPhaseCorrection')['value'][0]))
     # 'WaterSuppressionType'
     # 'SequenceTriggered'
     # # 5.2 Scanner information
