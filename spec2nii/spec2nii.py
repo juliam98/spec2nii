@@ -12,15 +12,15 @@ import os.path as op
 from pathlib import Path
 import json
 from nibabel.nifti2 import Nifti2Image
-from spec2nii import __version__ as spec2nii_ver
+# from spec2nii import __version__ as spec2nii_ver
 from numpy import isclose
 # There are case specific imports below
-
+spec2nii_ver = '1.0.0'
 
 class Spec2niiError(Exception):
     pass
 
-
+# /usr/bin/python3 spec2nii/spec2nii.py dicom /Users/k21089512/Desktop/Code/Python/spec2nii/tests/spec2nii_test_data/sub-102_ses-MRI1_voi-ACC_acq-pres_mrsref.dcm -j
 class spec2nii:
     def __init__(self):
         cite_str = "Clarke WT, Bell TK, Emir UE, Mikkelsen M, Oeltzschner G, Shamaei A, Soher BJ, Wilson M. "\

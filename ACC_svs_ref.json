@@ -1,0 +1,46 @@
+{
+    "SpectrometerFrequency": [
+        123.257015
+    ],
+    "ResonantNucleus": [
+        "1H"
+    ],
+    "dim_5": "DIM_DYN",
+    "EchoTime": 0.03,
+    "RepetitionTime": 3.0,
+    "Manufacturer": "SIEMENS",
+    "ManufacturersModelName": "Prisma",
+    "DeviceSerialNumber": "166001",
+    "SoftwareVersions": "syngo MR E11",
+    "TxCoil": "Body",
+    "RxCoil": "HC1-7;NC1,2",
+    "SequenceName": "*svs_se",
+    "ProtocolName": "ACC_svs",
+    "PatientPosition": "HFS",
+    "PatientName": "102",
+    "PatientWeight": 58.8,
+    "PatientSex": "F",
+    "ConversionMethod": "spec2nii v0+untagged.229.g2656a66.dirty",
+    "ConversionTime": "2024-08-08T20:15:21.803",
+    "kSpace": [
+        false,
+        false,
+        false
+    ],
+    "OriginalFile": [
+        "/Users/k21089512/Desktop/spec2nii_test/ACC/mrsref/sub-102_ses-MRI1_voi-ACC_acq-pres_mrsref.dcm"
+    ],
+    "SpectralWidth": 2500.0,
+    "WaterReferencedImageUid": {
+        "Value": "216.215698",
+        "Description": "Sequence binary path."
+    },
+    "WaterReferencedPhaseCorrection": {
+        "Value": true,
+        "Description": "Sequence binary path."
+    },
+    "PulseSequenceFile": {
+        "Value": "*svs_se",
+        "Description": "Sequence binary path."
+    }
+}
